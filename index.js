@@ -10,6 +10,14 @@ function findMatching(array, string){
 //the array, and returns all drivers whose names begin with the provided letters.
 
 function fuzzyMatch(array, string){
-  return array.filter(name => name.slice(0, 2) === string)
+  let firstLetter = array.filter(name => name.slice(0, 2) === string)
+  return firstLetter;
+}
+
+//matchName - This function takes an array of driver objects and a string as arguments. Each driver object has two properties: name and hometown. 
+//The function should return each element whose name property matches the provided string argument.
+
+function matchName(array, string){
+  return array.filter(name => name.name === string)
 }
 
